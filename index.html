@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="https://cdn4.iconfinder.com/data/icons/materia-flat-lightning/24/020_022_led_diode_light_emitting_luminodiode-512.png">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Interface</title>
+</head>
+<body style="background-color:#DFCFBE;">
+
+<p class="bottom-three">
+<div style="text-align: center;" class="serial-scale-div">
+    <button class="button-40" id="connect-to-serial">CONNECT</button>
+    <button class="button-40" id="disconnect-to-serial">DISCONNECT</button>
+    <button class="button-40" id="send-A" >SEND</button>
+</div>
+</p>
+
+<div style="text-align: center;" >
+    <canvas id="my-canvas" width="400" height="400"></canvas>
+</div>
+
+<p class="bottom-three">
+<div style="text-align: center;" >
+    <input id="colorpicker" type="color" />
+    <input type="range" min="1" max="100" value="1" class="slider" id="myRange">
+    <span id="demo">50%</span>
+</div>
+
+
+
+
+<p class="bottom-three">
+<div style="text-align: center;" >
+    <button class="button-40" id="SETBLACK">set black</button>
+    <button class="button-40" id="SETRED">set red</button>
+    <button class="button-40" id="SETYELLOW">set yellow</button>
+    <button class="button-40" id="CHANGETURN">change turn</button>
+</div>
+</p>
+<p class="bottom-three">
+<div style="text-align: center;" >
+    <button class="button-40" id="FILLRED">fill red</button>
+    <button class="button-40" id="FILLYELLOW" >fill yellow</button>
+    <button class="button-40" id="CLEAR" >clear</button>
+</div>
+</p>
+
+<p class="bottom-three">
+<div style="text-align: center;" >
+    <button class="button-40" id="SET" >set</button>
+    <input class="input-40" type="number" id="X" placeholder="X:" maxlength="4"></td>
+    <input class="input-40" type="number" id="Y" placeholder="Y:" maxlength="4"></td>
+    <button class="button-40" id="SAVESTATE" >save state</button>
+    <button class="button-40" id="LOADSTATE" >load state</button>
+</div>
+</p>
+
+<script src="scripts/colorSetter.js"></script>
+<script src="scripts/writer.js"></script>
+<script src="scripts/clickEvents.js"></script>
+
+</body>
+</html>
