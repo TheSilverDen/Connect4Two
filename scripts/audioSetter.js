@@ -1,4 +1,4 @@
 function playJingle(){
-    var music = new Audio('musicfile.mp3');
+    var music = new Audio('assets/victoryJingle.mp3');
     music.play();
     }
